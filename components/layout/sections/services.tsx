@@ -17,25 +17,25 @@ interface ServiceProps {
 }
 const serviceList: ServiceProps[] = [
   {
-    title: "Custom Domain Integration",
+    title: "Fundamental Analysis Suite",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing.",
+      "Comprehensive financial metrics, ratios, and trend analysis with historical comparisons and peer benchmarking.",
     pro: 0,
   },
   {
-    title: "Social Media Integrations",
+    title: "Sentiment Analysis Engine",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, dicta.",
+      "AI-powered sentiment tracking from news, social media, and analyst reports to gauge market mood and momentum.",
     pro: 0,
   },
   {
-    title: "Email Marketing Integrations",
-    description: "Lorem dolor sit amet adipisicing.",
-    pro: 0,
+    title: "Advanced Portfolio Analytics",
+    description: "Portfolio optimization, risk assessment, and performance attribution analysis with sector allocation insights.",
+    pro: 1,
   },
   {
-    title: "SEO Optimization",
-    description: "Lorem ipsum dolor sit amet consectetur.",
+    title: "Institutional Data Access",
+    description: "Direct access to Bloomberg-grade data feeds, alternative datasets, and proprietary research from top-tier firms.",
     pro: 1,
   },
 ];
@@ -44,15 +44,15 @@ export const ServicesSection = () => {
   return (
     <section id="services" className="container py-24 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Services
+        Research Tools
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Grow Your Business
+        Professional-Grade Analysis
       </h2>
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        From marketing and sales to operations and strategy, we have the
-        expertise to help you achieve your goals.
+        From fundamental analysis to advanced portfolio analytics, access the same 
+        research tools used by institutional investors and hedge funds.
       </h3>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
 

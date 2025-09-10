@@ -10,40 +10,40 @@ interface FeaturesProps {
 
 const featureList: FeaturesProps[] = [
   {
-    icon: "TabletSmartphone",
-    title: "Mobile Friendly",
+    icon: "BarChart3",
+    title: "Customizable Dashboard",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "Beautiful, intuitive dashboards that surface the most important financial metrics. Customize layouts and visualizations to match your research workflow.",
   },
   {
-    icon: "BadgeCheck",
-    title: "Social Proof",
+    icon: "Brain",
+    title: "AI-Powered Insights",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "Native AI that works with institutional-grade data to provide hallucination-free analysis. Extract key insights from complex financial documents instantly.",
   },
   {
-    icon: "Goal",
-    title: "Targeted Content",
+    icon: "Users",
+    title: "Insider Activity Tracking",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "Monitor insider transactions, executive changes, and corporate actions. Get alerts when key personnel make significant moves.",
   },
   {
-    icon: "PictureInPicture",
-    title: "Strong Visuals",
+    icon: "Zap",
+    title: "Real-Time Data",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "Access live market data, breaking news, and real-time updates on fundamental changes. Never miss critical information that could impact your positions.",
   },
   {
-    icon: "MousePointerClick",
-    title: "Clear CTA",
+    icon: "MessageCircle",
+    title: "Custom Prompt Engine",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "Create and save custom prompts for analyzing transcripts, filings, and reports. Build your own research templates for consistent analysis.",
   },
   {
-    icon: "Newspaper",
-    title: "Clear Headline",
+    icon: "Shield",
+    title: "Institution-Grade Reliability",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "Built on the same data infrastructure used by hedge funds and investment banks. Ensure accuracy and reliability in your investment decisions.",
   },
 ];
 
@@ -51,17 +51,16 @@ export const FeaturesSection = () => {
   return (
     <section id="features" className="container py-24 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Features
+        Platform Features
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        What Makes Us Different
+        Everything You Need for Smart Investing
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-        facere tenetur.
+        From fundamental analysis to sentiment tracking, our comprehensive platform 
+        provides all the tools you need to make informed investment decisions with confidence.
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

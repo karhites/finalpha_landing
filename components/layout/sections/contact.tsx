@@ -63,14 +63,14 @@ export const ContactSection = () => {
         <div>
           <div className="mb-4">
             <h2 className="text-lg text-primary mb-2 tracking-wider">
-              Contact
+              Get Started
             </h2>
 
-            <h2 className="text-3xl md:text-4xl font-bold">Connect With Us</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">Ready to Transform Your Research?</h2>
           </div>
           <p className="mb-8 text-muted-foreground lg:w-5/6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            ipsam sint enim exercitationem ex autem corrupti quas tenetur
+            Join thousands of investment professionals who trust FinAlpha for their equity research needs. 
+            Contact our team to learn how our AI-powered platform can enhance your investment workflow.
           </p>
 
           <div className="flex flex-col gap-4">
@@ -80,7 +80,7 @@ export const ContactSection = () => {
                 <div className="font-bold">Find us</div>
               </div>
 
-              <div>742 Evergreen Terrace, Springfield, IL 62704</div>
+              <div>Wall Street Financial District, New York, NY 10005</div>
             </div>
 
             <div>
@@ -89,27 +89,27 @@ export const ContactSection = () => {
                 <div className="font-bold">Call us</div>
               </div>
 
-              <div>+1 (619) 123-4567</div>
+              <div>+1 (212) 555-ALPHA</div>
             </div>
 
             <div>
               <div className="flex gap-2 mb-1">
                 <Mail />
-                <div className="font-bold">Mail US</div>
+                <div className="font-bold">Contact Sales</div>
               </div>
 
-              <div>leomirandadev@gmail.com</div>
+              <div>sales@finalpha.com</div>
             </div>
 
             <div>
               <div className="flex gap-2">
                 <Clock />
-                <div className="font-bold">Visit us</div>
+                <div className="font-bold">Business Hours</div>
               </div>
 
               <div>
                 <div>Monday - Friday</div>
-                <div>8AM - 4PM</div>
+                <div>9AM - 6PM EST (Market Hours)</div>
               </div>
             </div>
           </div>
@@ -189,18 +189,18 @@ export const ContactSection = () => {
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
-                            <SelectItem value="Web Development">
-                              Web Development
+                            <SelectItem value="Demo Request">
+                              Demo Request
                             </SelectItem>
-                            <SelectItem value="Mobile Development">
-                              Mobile Development
+                            <SelectItem value="Institutional Sales">
+                              Institutional Sales
                             </SelectItem>
-                            <SelectItem value="Figma Design">
-                              Figma Design
+                            <SelectItem value="API Integration">
+                              API Integration
                             </SelectItem>
-                            <SelectItem value="REST API">REST API</SelectItem>
-                            <SelectItem value="FullStack Project">
-                              FullStack Project
+                            <SelectItem value="Data Partnership">Data Partnership</SelectItem>
+                            <SelectItem value="Technical Support">
+                              Technical Support
                             </SelectItem>
                           </SelectContent>
                         </Select>

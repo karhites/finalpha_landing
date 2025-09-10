@@ -10,28 +10,28 @@ interface BenefitsProps {
 
 const benefitList: BenefitsProps[] = [
   {
-    icon: "Blocks",
-    title: "Build Brand Trust",
+    icon: "FileText",
+    title: "SEC Filings Integration",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Direct access to official SEC filings with smart parsing and extraction. Navigate complex financial documents with AI-powered insights.",
   },
   {
-    icon: "LineChart",
-    title: "More Leads",
+    icon: "MessageSquare",
+    title: "Transcript Analysis",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "Chat with earnings call transcripts using customizable prompts. Extract key insights and sentiment from management discussions.",
   },
   {
-    icon: "Wallet",
-    title: "Higher Conversions",
+    icon: "TrendingUp",
+    title: "Analyst Ratings Hub",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "Comprehensive analyst coverage with real-time rating changes, price targets, and consensus tracking across all major firms.",
   },
   {
-    icon: "Sparkle",
-    title: "Test Marketing Ideas",
+    icon: "BookmarkCheck",
+    title: "Smart Watchlists",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Build and monitor custom watchlists with intelligent alerts for fundamental changes, insider activity, and market events.",
   },
 ];
 
@@ -40,15 +40,14 @@ export const BenefitsSection = () => {
     <section id="benefits" className="container py-24 sm:py-32">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
         <div>
-          <h2 className="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
+          <h2 className="text-lg text-primary mb-2 tracking-wider">Core Capabilities</h2>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Shortcut to Success
+            Institution-Grade Financial Intelligence
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+            Access comprehensive equity research tools powered by AI and institutional-quality data. 
+            Make informed investment decisions with hallucination-free analysis and real-time insights.
           </p>
         </div>
 

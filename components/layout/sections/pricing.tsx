@@ -25,48 +25,52 @@ interface PlanProps {
 
 const plans: PlanProps[] = [
   {
-    title: "Free",
+    title: "Starter",
     popular: 0,
     price: 0,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+      "Perfect for individual investors getting started with professional-grade research tools.",
     buttonText: "Start Free Trial",
     benefitList: [
-      "1 team member",
-      "1 GB storage",
-      "Upto 2 pages",
+      "5 watchlist companies",
+      "Basic financial metrics",
+      "SEC filings access",
       "Community support",
-      "AI assistance",
+      "AI chat (10 queries/day)",
     ],
   },
   {
-    title: "Premium",
+    title: "Professional",
     popular: 1,
-    price: 45,
+    price: 49,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Get starterd",
+      "Comprehensive research suite for serious investors and small funds.",
+    buttonText: "Get Started",
     benefitList: [
-      "4 team member",
-      "8 GB storage",
-      "Upto 6 pages",
+      "Unlimited watchlists",
+      "Advanced analytics dashboard",
+      "Transcript analysis & chat",
+      "Analyst ratings & consensus",
+      "Insider activity tracking",
       "Priority support",
-      "AI assistance",
+      "Unlimited AI queries",
     ],
   },
   {
-    title: "Enterprise",
+    title: "Institutional",
     popular: 0,
-    price: 120,
+    price: 199,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
+      "Enterprise-grade platform for investment firms and institutional clients.",
+    buttonText: "Contact Sales",
     benefitList: [
-      "10 team member",
-      "20 GB storage",
-      "Upto 10 pages",
-      "Phone & email support",
-      "AI assistance",
+      "Multi-user team access",
+      "Bloomberg-grade data feeds",
+      "Custom research templates",
+      "API access & integrations",
+      "Dedicated account manager",
+      "White-label options",
+      "Advanced portfolio analytics",
     ],
   },
 ];
@@ -75,15 +79,16 @@ export const PricingSection = () => {
   return (
     <section className="container py-24 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Pricing
+        Pricing Plans
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Get unlimitted access
+        Choose Your Research Advantage
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground pb-14">
-        Lorem ipsum dolor sit amet consectetur adipisicing reiciendis.
+        From individual investors to institutional clients, find the perfect plan 
+        for your equity research needs. All plans include our core AI-powered analysis tools.
       </h3>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">

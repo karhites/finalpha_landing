@@ -13,32 +13,32 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free NextJS Shadcn template.",
+    question: "How accurate is the AI-powered financial analysis?",
+    answer: "Our AI works exclusively with institutional-grade financial data and is designed to be hallucination-free. We use the same data infrastructure as hedge funds and investment banks, ensuring high accuracy and reliability in all analysis.",
     value: "item-1",
   },
   {
-    question: "Duis aute irure dolor in reprehenderit in voluptate velit?",
+    question: "Can I chat with earnings call transcripts using custom prompts?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam consectetur sapiente, iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "Yes! Our platform allows you to create and save custom prompts for analyzing transcripts, SEC filings, and reports. You can build your own research templates for consistent analysis across different companies and time periods.",
     value: "item-2",
   },
   {
     question:
-      "Lorem ipsum dolor sit amet Consectetur natus dolor minus quibusdam?",
+      "What type of insider activity tracking do you provide?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis.",
+      "We monitor all insider transactions, executive changes, corporate actions, and significant shareholding changes. You'll receive real-time alerts when key personnel make moves that could impact stock performance.",
     value: "item-3",
   },
   {
-    question: "Excepteur sint occaecat cupidata non proident sunt?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "Do you provide real-time analyst ratings and price targets?",
+    answer: "Yes, we aggregate analyst coverage from all major firms with real-time rating changes, price target updates, and consensus tracking. You'll see comprehensive analyst sentiment and how it changes over time.",
     value: "item-4",
   },
   {
     question:
-      "Enim ad minim veniam, quis nostrud exercitation ullamco laboris?",
-    answer: "consectetur adipisicing elit. Sint labore.",
+      "Is there an API for integrating with my existing investment tools?",
+    answer: "Our Institutional plan includes full API access and integrations. You can connect our data and analysis capabilities to your existing portfolio management systems and trading platforms.",
     value: "item-5",
   },
 ];
@@ -48,11 +48,11 @@ export const FAQSection = () => {
     <section id="faq" className="container md:w-[700px] py-24 sm:py-32">
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-          FAQS
+          FAQ
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold">
-          Common Questions
+          Frequently Asked Questions
         </h2>
       </div>
 
