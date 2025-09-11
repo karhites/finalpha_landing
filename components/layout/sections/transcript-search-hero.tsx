@@ -1,12 +1,12 @@
 "use client";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Search, FileText, Filter } from "lucide-react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 
-export const HeroSection = () => {
+export const TranscriptSearchHeroSection = () => {
   const { theme } = useTheme();
   return (
     <section className="container w-full">
@@ -16,26 +16,26 @@ export const HeroSection = () => {
             <span className="mr-2 text-primary">
               <Badge>Beta</Badge>
             </span>
-            <span> AI-Powered Financial Analysis </span>
+            <span> Transcript Search </span>
           </Badge>
 
           <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
             <h1>
-              Your
+              Search
               <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                Equity Research
+                Every Word
               </span>
-              starts here
+              That Matters
             </h1>
           </div>
 
           <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-            {`Transform your investment workflow with AI-powered analysis of SEC filings, earnings transcripts, and analyst ratings. Make data-driven decisions with institution-grade financial intelligence.`}
+            {`Advanced transcript search engine for earnings calls and investor presentations. Find key insights, track management guidance, and analyze sentiment across thousands of corporate communications.`}
           </p>
 
           <div className="space-y-4 md:space-y-0 md:space-x-4">
             <Button className="w-5/6 md:w-1/4 font-bold group/arrow">
-              Start Free Trial
+              Try Search Beta
               <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
             </Button>
 
@@ -44,12 +44,29 @@ export const HeroSection = () => {
               variant="secondary"
               className="w-5/6 md:w-1/4 font-bold"
             >
-              <Link
-                href="#features"
-              >
-                View Demo
+              <Link href="/">
+                Back to Home
               </Link>
             </Button>
+          </div>
+
+          {/* Feature highlights */}
+          <div className="grid md:grid-cols-3 gap-6 max-w-2xl mx-auto mt-12">
+            <div className="flex flex-col items-center space-y-2">
+              <Search className="h-8 w-8 text-primary" />
+              <h3 className="font-semibold">Semantic Search</h3>
+              <p className="text-sm text-muted-foreground text-center">AI-powered search that understands context and meaning</p>
+            </div>
+            <div className="flex flex-col items-center space-y-2">
+              <FileText className="h-8 w-8 text-primary" />
+              <h3 className="font-semibold">Full Transcript Index</h3>
+              <p className="text-sm text-muted-foreground text-center">Comprehensive database of earnings calls and presentations</p>
+            </div>
+            <div className="flex flex-col items-center space-y-2">
+              <Filter className="h-8 w-8 text-primary" />
+              <h3 className="font-semibold">Advanced Filters</h3>
+              <p className="text-sm text-muted-foreground text-center">Filter by company, date, sector, and sentiment indicators</p>
+            </div>
           </div>
         </div>
 
@@ -58,13 +75,13 @@ export const HeroSection = () => {
           <Image
             width={1200}
             height={1200}
-            className="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-secondary  border-t-primary/30"
+            className="w-full md:w-[1200px] mx-auto rounded-lg relative leading-none flex items-center border border-t-2 border-secondary border-t-primary/30"
             src={
               theme === "light"
                 ? "/hero-image-light.jpeg"
                 : "/hero-image-dark.jpeg"
             }
-            alt="dashboard"
+            alt="FinAlpha Transcript Search Interface"
           />
 
           <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"></div>

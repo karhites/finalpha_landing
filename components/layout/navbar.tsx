@@ -31,6 +31,7 @@ interface RouteProps {
 interface FeatureProps {
   title: string;
   description: string;
+  href: string;
 }
 
 const routeList: RouteProps[] = [
@@ -54,18 +55,29 @@ const routeList: RouteProps[] = [
 
 const featureList: FeatureProps[] = [
   {
-    title: "Showcase Your Value ",
-    description: "Highlight how your product solves user problems.",
+    title: "Customizable Dashboard",
+    description: "Efficient command center for comprehensive equity research and portfolio management.",
+    href: "/features/dashboard",
   },
   {
-    title: "Build Trust",
-    description:
-      "Leverages social proof elements to establish trust and credibility.",
+    title: "AI Side Panel",
+    description: "Intelligent assistant for quick analysis with customized prompts and transcript chat.",
+    href: "/features/ai-sidepanel",
   },
   {
-    title: "Capture Leads",
-    description:
-      "Make your lead capture form visually appealing and strategically.",
+    title: "Transcript Search",
+    description: "Advanced search engine for earnings calls and investor presentations.",
+    href: "/features/transcript-search",
+  },
+  {
+    title: "Analyst Ratings",
+    description: "Track analyst performance and identify the most reliable voices in research.",
+    href: "/features/analyst-ratings",
+  },
+  {
+    title: "Smart Notifications",
+    description: "Never miss important market movements with intelligent alerts and triggers.",
+    href: "/features/notifications",
   },
 ];
 
@@ -74,8 +86,8 @@ export const Navbar = () => {
   return (
     <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
       <Link href="/" className="font-bold text-lg flex items-center">
-        <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-        Shadcn
+        <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-black" />
+        FinAlpha
       </Link>
       {/* <!-- Mobile --> */}
       <div className="flex items-center lg:hidden">
@@ -95,8 +107,8 @@ export const Navbar = () => {
               <SheetHeader className="mb-4 ml-4">
                 <SheetTitle className="flex items-center">
                   <Link href="/" className="flex items-center">
-                    <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-                    Shadcn
+                    <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-black" />
+                    FinAlpha
                   </Link>
                 </SheetTitle>
               </SheetHeader>
@@ -142,17 +154,19 @@ export const Navbar = () => {
                   height={600}
                 />
                 <ul className="flex flex-col gap-2">
-                  {featureList.map(({ title, description }) => (
-                    <li
-                      key={title}
-                      className="rounded-md p-3 text-sm hover:bg-muted"
-                    >
-                      <p className="mb-1 font-semibold leading-none text-foreground">
-                        {title}
-                      </p>
-                      <p className="line-clamp-2 text-muted-foreground">
-                        {description}
-                      </p>
+                  {featureList.map(({ title, description, href }) => (
+                    <li key={title}>
+                      <Link 
+                        href={href}
+                        className="block rounded-md p-3 text-sm hover:bg-muted transition-colors"
+                      >
+                        <p className="mb-1 font-semibold leading-none text-foreground">
+                          {title}
+                        </p>
+                        <p className="line-clamp-2 text-muted-foreground">
+                          {description}
+                        </p>
+                      </Link>
                     </li>
                   ))}
                 </ul>
