@@ -55,11 +55,6 @@ const routeList: RouteProps[] = [
 
 const featureList: FeatureProps[] = [
   {
-    title: "Customizable Dashboard",
-    description: "Efficient command center for comprehensive equity research and portfolio management.",
-    href: "/features/dashboard",
-  },
-  {
     title: "AI Side Panel",
     description: "Intelligent assistant for quick analysis with customized prompts and transcript chat.",
     href: "/features/ai-sidepanel",

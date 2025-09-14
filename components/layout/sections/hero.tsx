@@ -30,7 +30,7 @@ export const HeroSection = () => {
           </div>
 
           <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-            {`Transform your investment workflow with AI-powered analysis of SEC filings, earnings transcripts, and analyst ratings. Make data-driven decisions with institution-grade financial intelligence.`}
+            {`Transform your investment workflow with a customizable control panel, AI-powered analysis, and professional research tools. Monitor markets, analyze transcripts, track analysts, and make data-driven decisions with institution-grade intelligence.`}
           </p>
 
           <div className="space-y-4 md:space-y-0 md:space-x-4">
@@ -64,7 +64,7 @@ export const HeroSection = () => {
                 ? "/hero-image-light.jpeg"
                 : "/hero-image-dark.jpeg"
             }
-            alt="dashboard"
+            alt="FinAlpha Control Panel and Research Platform"
           />
 
           <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"></div>
