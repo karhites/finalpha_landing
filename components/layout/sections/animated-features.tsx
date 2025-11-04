@@ -154,7 +154,7 @@ export const AnimatedFeaturesSection = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-lg text-primary text-center mb-2 tracking-wider font-mono">
-            // Advanced Features
+            {"//"} Advanced Features
           </h2>
           <h2 className="text-3xl md:text-5xl text-center font-bold mb-4">
             Powerful tools integrated with your

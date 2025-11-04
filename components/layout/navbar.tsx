@@ -12,15 +12,12 @@ import {
 import { Separator } from "../ui/separator";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from "../ui/navigation-menu";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import Image from "next/image";
 import { ToggleTheme } from "./toogle-theme";
 
 interface RouteProps {
@@ -28,47 +25,22 @@ interface RouteProps {
   label: string;
 }
 
-interface FeatureProps {
-  title: string;
-  description: string;
-  href: string;
-}
-
 const routeList: RouteProps[] = [
   {
-    href: "#testimonials",
+    href: "/features",
+    label: "Features",
+  },
+  {
+    href: "/#pricing",
+    label: "Pricing",
+  },
+  {
+    href: "/#testimonials",
     label: "Testimonials",
   },
   {
-    href: "#contact",
+    href: "/#contact",
     label: "Contact",
-  },
-  {
-    href: "#faq",
-    label: "FAQ",
-  },
-];
-
-const featureList: FeatureProps[] = [
-  {
-    title: "AI Side Panel",
-    description: "Intelligent assistant for quick analysis with customized prompts and transcript chat.",
-    href: "/features/ai-sidepanel",
-  },
-  {
-    title: "Transcript Search",
-    description: "Advanced search engine for earnings calls and investor presentations.",
-    href: "/features/transcript-search",
-  },
-  {
-    title: "Analyst Ratings",
-    description: "Track analyst performance and identify the most reliable voices in research.",
-    href: "/features/analyst-ratings",
-  },
-  {
-    title: "Smart Notifications",
-    description: "Never miss important market movements with intelligent alerts and triggers.",
-    href: "/features/notifications",
   },
 ];
 
@@ -131,49 +103,15 @@ export const Navbar = () => {
       {/* <!-- Desktop --> */}
       <NavigationMenu className="hidden lg:block mx-auto">
         <NavigationMenuList>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-card text-base">
-              Features
-            </NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
-                <Image
-                  src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                  alt="RadixLogo"
-                  className="h-full w-full rounded-md object-cover"
-                  width={600}
-                  height={600}
-                />
-                <ul className="flex flex-col gap-2">
-                  {featureList.map(({ title, description, href }) => (
-                    <li key={title}>
-                      <Link 
-                        href={href}
-                        className="block rounded-md p-3 text-sm hover:bg-muted transition-colors"
-                      >
-                        <p className="mb-1 font-semibold leading-none text-foreground">
-                          {title}
-                        </p>
-                        <p className="line-clamp-2 text-muted-foreground">
-                          {description}
-                        </p>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-
-          <NavigationMenuItem>
-            {routeList.map(({ href, label }) => (
-              <NavigationMenuLink key={href} asChild>
-                <Link href={href} className="text-base px-2">
+          {routeList.map(({ href, label }) => (
+            <NavigationMenuItem key={href}>
+              <NavigationMenuLink asChild>
+                <Link href={href} className="text-base px-4 py-2 hover:text-primary transition-colors">
                   {label}
                 </Link>
               </NavigationMenuLink>
-            ))}
-          </NavigationMenuItem>
+            </NavigationMenuItem>
+          ))}
         </NavigationMenuList>
       </NavigationMenu>
 
