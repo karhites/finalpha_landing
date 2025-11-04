@@ -1,8 +1,9 @@
 import { FeaturesDetailedSection } from "@/components/layout/sections/features-detailed";
+import { FinalCTASection } from "@/components/layout/sections/final-cta";
 import { FooterSection } from "@/components/layout/sections/footer";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Bot, Search, Target, Bell, ArrowRight } from "lucide-react";
+import { Bot, Search, Target, Bell } from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {
@@ -147,30 +148,7 @@ export default function FeaturesPage() {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="container w-full py-20 md:py-32">
-        <div className="mx-auto lg:max-w-screen-xl text-center space-y-8">
-          <h2 className="text-3xl md:text-5xl font-bold">
-            Ready to get started?
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Join thousands of investors using FinAlpha to make better, faster research decisions.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="group">
-              <Link href="/#pricing">
-                Start Free Trial
-                <ArrowRight className="size-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="outline">
-              <Link href="/#contact">
-                Contact Sales
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+      <FinalCTASection />
 
       <FooterSection />
     </>

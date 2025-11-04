@@ -1,13 +1,10 @@
 import { BenefitsSection } from "@/components/layout/sections/benefits";
 import { CommunitySection } from "@/components/layout/sections/community";
-import { ContactSection } from "@/components/layout/sections/contact";
+import { CoreFeaturesSection } from "@/components/layout/sections/core-features";
 import { FAQSection } from "@/components/layout/sections/faq";
-import { FeaturesSection } from "@/components/layout/sections/features";
-import { FeatureTeasersSection } from "@/components/layout/sections/feature-teasers";
+import { FinalCTASection } from "@/components/layout/sections/final-cta";
 import { FooterSection } from "@/components/layout/sections/footer";
 import { HeroSection } from "@/components/layout/sections/hero";
-import { PricingSection } from "@/components/layout/sections/pricing";
-import { ServicesSection } from "@/components/layout/sections/services";
 import { SponsorsSection } from "@/components/layout/sections/sponsors";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 
@@ -44,15 +41,12 @@ export default function Home() {
     <>
       <HeroSection />
       <SponsorsSection />
-      <FeatureTeasersSection />
+      <CoreFeaturesSection />
       <BenefitsSection />
-      <FeaturesSection />
-      <ServicesSection />
       <TestimonialSection />
-      <PricingSection />
       <CommunitySection />
       <FAQSection />
-      <ContactSection />
+      <FinalCTASection />
       <FooterSection />
     </>
   );

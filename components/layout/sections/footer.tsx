@@ -24,7 +24,7 @@ export const FooterSection = () => {
             </div>
 
             <div>
-              <Link href="#pricing" className="opacity-60 hover:opacity-100">
+              <Link href="/pricing" className="opacity-60 hover:opacity-100">
                 Pricing
               </Link>
             </div>
@@ -103,7 +103,7 @@ export const FooterSection = () => {
         <Separator className="my-6" />
         <section className="">
           <h3 className="">
-            &copy; 2024 FinAlpha. All rights reserved. 
+            &copy; 2025 FinAlpha. All rights reserved.
             <span className="text-muted-foreground text-sm ml-4">
               Providing institution-grade financial intelligence to all investors.
             </span>

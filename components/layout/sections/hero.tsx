@@ -21,21 +21,21 @@ export const HeroSection = () => {
 
           <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
             <h1>
-              Built to give you
+              Your
               <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                institutional-grade insights
+                Equity Research
               </span>
-              instantly
+              starts here
             </h1>
           </div>
 
           <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-            {`FinAlpha is the best way to research with AI. Get an edge in equity markets with AI-powered analysis of earnings transcripts, analyst ratings, and SEC filings—all in one intelligent platform.`}
+            {`Transform your investment workflow with a customizable control panel, AI-powered analysis, and professional research tools. Monitor markets, analyze transcripts, track analysts, and make data-driven decisions with institution-grade intelligence.`}
           </p>
 
           <div className="space-y-4 md:space-y-0 md:space-x-4">
             <Button className="w-5/6 md:w-1/4 font-bold group/arrow">
-              Start Free Trial
+              Get Started
               <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
             </Button>
 
