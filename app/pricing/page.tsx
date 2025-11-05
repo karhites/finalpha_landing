@@ -1,30 +1,29 @@
 import { PricingSection } from "@/components/layout/sections/pricing";
 import { FinalCTASection } from "@/components/layout/sections/final-cta";
 import { FooterSection } from "@/components/layout/sections/footer";
-import { Badge } from "@/components/ui/badge";
 import { Check } from "lucide-react";
 
 export const metadata = {
-  title: "Pricing - FinAlpha AI-Powered Equity Research",
+  title: "Pricing - Stop Drifts AI-Powered Equity Research",
   description: "Choose the perfect plan for your equity research needs. From individual investors to institutional clients, find flexible pricing that scales with you.",
   openGraph: {
     type: "website",
-    url: "https://finalpha.com/pricing",
-    title: "Pricing - FinAlpha AI-Powered Equity Research",
+    url: "https://stopdrifts.com/pricing",
+    title: "Pricing - Stop Drifts AI-Powered Equity Research",
     description: "Choose the perfect plan for your equity research needs. From individual investors to institutional clients, find flexible pricing that scales with you.",
     images: [
       {
         url: "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
         width: 1200,
         height: 630,
-        alt: "FinAlpha Pricing",
+        alt: "Stop Drifts Pricing",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "https://finalpha.com/pricing",
-    title: "Pricing - FinAlpha AI-Powered Equity Research",
+    site: "https://stopdrifts.com/pricing",
+    title: "Pricing - Stop Drifts AI-Powered Equity Research",
     description: "Choose the perfect plan for your equity research needs. From individual investors to institutional clients, find flexible pricing that scales with you.",
     images: [
       "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
@@ -35,29 +34,6 @@ export const metadata = {
 export default function PricingPage() {
   return (
     <>
-      {/* Pricing Hero */}
-      <section className="container w-full">
-        <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
-          <div className="text-center space-y-8 max-w-4xl">
-            <Badge variant="outline" className="text-sm py-2">
-              <span className="text-primary">Simple, Transparent Pricing</span>
-            </Badge>
-
-            <h1 className="text-4xl md:text-6xl font-bold">
-              Invest smarter with
-              <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                flexible pricing
-              </span>
-            </h1>
-
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              From individual investors to institutional clients, find the perfect plan
-              for your equity research needs. All plans include our core AI-powered analysis tools.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Pricing Plans */}
       <PricingSection />
 

@@ -42,11 +42,23 @@ const routeList: RouteProps[] = [
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const [isScrolled, setIsScrolled] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      // Check if user has scrolled past the hero section (roughly 600px)
+      setIsScrolled(window.scrollY > 600);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
       <Link href="/" className="font-bold text-lg flex items-center">
         <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-black" />
-        FinAlpha
+        Stop Drifts
       </Link>
       {/* <!-- Mobile --> */}
       <div className="flex items-center lg:hidden">
@@ -67,7 +79,7 @@ export const Navbar = () => {
                 <SheetTitle className="flex items-center">
                   <Link href="/" className="flex items-center">
                     <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-black" />
-                    FinAlpha
+                    Stop Drifts
                   </Link>
                 </SheetTitle>
               </SheetHeader>
@@ -84,6 +96,22 @@ export const Navbar = () => {
                     <Link href={href}>{label}</Link>
                   </Button>
                 ))}
+                <Separator className="my-2" />
+                <Button
+                  onClick={() => setIsOpen(false)}
+                  asChild
+                  variant="ghost"
+                  className="justify-start text-base"
+                >
+                  <Link href="/signin">Sign In</Link>
+                </Button>
+                <Button
+                  onClick={() => setIsOpen(false)}
+                  asChild
+                  className="justify-start text-base font-bold"
+                >
+                  <Link href="/get-started">Get Started For Free</Link>
+                </Button>
               </div>
             </div>
 
@@ -111,16 +139,26 @@ export const Navbar = () => {
         </NavigationMenuList>
       </NavigationMenu>
 
-      <div className="hidden lg:flex">
+      <div className="hidden lg:flex gap-2 items-center">
         <ToggleTheme />
 
-        <Button asChild size="sm" variant="ghost" aria-label="View on GitHub">
-          <Link
-            aria-label="View on GitHub"
-            href="https://github.com/nobruf/shadcn-landing-page.git"
-            target="_blank"
-          >
-            <Github className="size-5" />
+        <Button asChild size="sm" variant="ghost">
+          <Link href="/signin">
+            Sign In
+          </Link>
+        </Button>
+
+        <Button
+          asChild
+          size="sm"
+          className={`font-bold transition-all duration-300 ${
+            isScrolled
+              ? 'bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg'
+              : 'bg-muted text-muted-foreground hover:bg-muted/80'
+          }`}
+        >
+          <Link href="/get-started">
+            Get Started For Free
           </Link>
         </Button>
       </div>

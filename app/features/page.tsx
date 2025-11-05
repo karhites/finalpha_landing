@@ -7,27 +7,27 @@ import { Bot, Search, Target, Bell } from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Features - FinAlpha AI-Powered Equity Research",
-  description: "Explore FinAlpha's powerful features: AI Side Panel, Transcript Search, Analyst Ratings, and Smart Notifications. Everything you need to research smarter.",
+  title: "Features - Stop Drifts AI-Powered Equity Research",
+  description: "Explore Stop Drifts' powerful features: AI Side Panel, Transcript Search, Analyst Ratings, and Smart Notifications. Everything you need to research smarter.",
   openGraph: {
     type: "website",
-    url: "https://finalpha.com/features",
-    title: "Features - FinAlpha AI-Powered Equity Research",
-    description: "Explore FinAlpha's powerful features: AI Side Panel, Transcript Search, Analyst Ratings, and Smart Notifications. Everything you need to research smarter.",
+    url: "https://stopdrifts.com/features",
+    title: "Features - Stop Drifts AI-Powered Equity Research",
+    description: "Explore Stop Drifts' powerful features: AI Side Panel, Transcript Search, Analyst Ratings, and Smart Notifications. Everything you need to research smarter.",
     images: [
       {
         url: "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
         width: 1200,
         height: 630,
-        alt: "FinAlpha Features",
+        alt: "Stop Drifts Features",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "https://finalpha.com/features",
-    title: "Features - FinAlpha AI-Powered Equity Research",
-    description: "Explore FinAlpha's powerful features: AI Side Panel, Transcript Search, Analyst Ratings, and Smart Notifications. Everything you need to research smarter.",
+    site: "https://stopdrifts.com/features",
+    title: "Features - Stop Drifts AI-Powered Equity Research",
+    description: "Explore Stop Drifts' powerful features: AI Side Panel, Transcript Search, Analyst Ratings, and Smart Notifications. Everything you need to research smarter.",
     images: [
       "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
     ],
@@ -39,26 +39,25 @@ export default function FeaturesPage() {
     <>
       {/* Features Hero */}
       <section className="container w-full">
-        <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
-          <div className="text-center space-y-8 max-w-4xl">
-            <Badge variant="outline" className="text-sm py-2">
+        <div className="grid place-items-center lg:max-w-screen-xl gap-6 mx-auto py-12 md:py-16">
+          <div className="text-center space-y-4 max-w-3xl">
+            <Badge variant="outline" className="text-sm py-1.5">
               <span className="text-primary">Platform Capabilities</span>
             </Badge>
 
-            <h1 className="text-4xl md:text-6xl font-bold">
+            <h1 className="text-3xl md:text-4xl font-bold">
               Everything you need to
               <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
                 research smarter
               </span>
             </h1>
 
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-xl mx-auto">
               Powerful AI-driven tools for equity research, designed to give you an institutional edge.
-              From intelligent search to performance tracking, FinAlpha has you covered.
             </p>
 
             {/* Quick Nav to Features */}
-            <div className="flex flex-wrap justify-center gap-3 pt-4">
+            <div className="flex flex-wrap justify-center gap-2 pt-2">
               <Button asChild variant="outline" size="sm">
                 <Link href="#ai-sidepanel" className="flex items-center gap-2">
                   <Bot className="h-4 w-4" />
