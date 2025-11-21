@@ -4,6 +4,7 @@ import { FAQSection } from "@/components/layout/sections/faq";
 import { FinalCTASection } from "@/components/layout/sections/final-cta";
 import { FooterSection } from "@/components/layout/sections/footer";
 import { HeroSection } from "@/components/layout/sections/hero";
+import { PremiumFeaturesSection } from "@/components/layout/sections/premium-features";
 import { SponsorsSection } from "@/components/layout/sections/sponsors";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 
@@ -41,6 +42,7 @@ export default function Home() {
       <HeroSection />
       <SponsorsSection />
       <CoreFeaturesSection />
+      <PremiumFeaturesSection />
       <BenefitsSection />
       <TestimonialSection />
       <FAQSection />
