@@ -30,7 +30,7 @@ const reviewList: ReviewProps[] = [
     name: "Michael Chen",
     userName: "Portfolio Manager, Apex Capital",
     comment:
-      "FinAlpha's AI-powered transcript analysis has revolutionized our research process. We can now extract key insights from earnings calls in minutes, not hours.",
+      "StockDrifts' AI-powered transcript analysis has revolutionized our research process. We can now extract key insights from earnings calls in minutes, not hours.",
     rating: 5.0,
   },
   {

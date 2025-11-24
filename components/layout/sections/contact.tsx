@@ -69,7 +69,7 @@ export const ContactSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold">Ready to Transform Your Research?</h2>
           </div>
           <p className="mb-8 text-muted-foreground lg:w-5/6">
-            Join thousands of investment professionals who trust FinAlpha for their equity research needs. 
+            Join thousands of investment professionals who trust StockDrifts for their equity research needs.
             Contact our team to learn how our AI-powered platform can enhance your investment workflow.
           </p>
 
@@ -98,7 +98,7 @@ export const ContactSection = () => {
                 <div className="font-bold">Contact Sales</div>
               </div>
 
-              <div>sales@finalpha.com</div>
+              <div>sales@stockdrifts.com</div>
             </div>
 
             <div>

@@ -58,6 +58,11 @@ const features: Feature[] = [
     icon: <Briefcase className="h-6 w-6" />,
     title: "13F Data",
     description: "The latest moves from the world's leading investors."
+  },
+  {
+    icon: <Target className="h-6 w-6" />,
+    title: "Investment Thesis & Positions",
+    description: "Get the investment thesis and avg. price for each position in your favourite investors."
   }
 ];
 
@@ -105,7 +110,7 @@ export const PremiumFeaturesSection = () => {
           <h2 className="text-3xl md:text-5xl font-bold">
             Packed With
             <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-              Premium Features
+              Features
             </span>
           </h2>
           <p className="text-xl text-muted-foreground">

@@ -1,7 +1,7 @@
 "use client";
 import { useTheme } from "next-themes";
 import Image from "next/image";
-import { LayoutDashboard, Users, Bot, LineChart } from "lucide-react";
+import { LayoutDashboard, Users, Bot, Bell } from "lucide-react";
 
 interface CoreFeatureProps {
   icon: React.ReactNode;
@@ -75,32 +75,32 @@ export const CoreFeaturesSection = () => {
           icon={<LayoutDashboard className="h-10 w-10 text-primary" />}
           title="Cockpit-like dashboard to quickly understand what analysts understand"
           description="Professional-grade control panel with real-time market data, analyst consensus, and key metrics at a glance. Get the full picture instantly."
-          imageAlt="FinAlpha Cockpit Dashboard"
+          imageAlt="StockDrifts Cockpit Dashboard"
         />
 
-        {/* Feature 2: Investor Intelligence */}
+        {/* Feature 2: Smart Notifications */}
+        <CoreFeature
+          icon={<Bell className="h-10 w-10 text-primary" />}
+          title="Smart AI alerts under a second"
+          description="Get instant AI-powered notifications when your favorite company files an SEC filing or releases news on their website. Add your own custom prompts to get quick reactions to breaking news and market events."
+          imageAlt="Smart AI Notifications"
+          reverse
+        />
+
+        {/* Feature 3: Investor Intelligence */}
         <CoreFeature
           icon={<Users className="h-10 w-10 text-primary" />}
           title="See, copy, learn, get ideas from 20k investors"
           description="View positions, understand investment thesis, and track performance of top investors in your favorite stocks. Learn from the best."
           imageAlt="Investor Intelligence Platform"
-          reverse
         />
 
-        {/* Feature 3: AI Side Panel */}
+        {/* Feature 4: AI Side Panel */}
         <CoreFeature
           icon={<Bot className="h-10 w-10 text-primary" />}
           title="AI side panel with ±0 hallucinations"
           description="We achieve near-zero hallucinations by optimizing the context fed to AI. Get reliable insights without the noise."
           imageAlt="AI Side Panel with Zero Hallucinations"
-        />
-
-        {/* Feature 4: Advanced Charting */}
-        <CoreFeature
-          icon={<LineChart className="h-10 w-10 text-primary" />}
-          title="Charting comparison metrics"
-          description="Compare stocks, sectors, and metrics with professional-grade charting tools. Visualize trends and make data-driven decisions."
-          imageAlt="Advanced Charting and Comparison Tools"
           reverse
         />
       </div>

@@ -81,7 +81,7 @@ export const AISidepanelHeroSection = () => {
                 ? "/hero-image-light.jpeg"
                 : "/hero-image-dark.jpeg"
             }
-            alt="FinAlpha AI Side Panel Interface"
+            alt="StockDrifts AI Side Panel Interface"
           />
 
           <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"></div>
