@@ -30,12 +30,12 @@ export const HeroSection = () => {
           </div>
 
           <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-            {`Transform your investment workflow with a customizable control panel, AI-powered analysis, and professional research tools. Monitor markets, analyze transcripts, track analysts, and make data-driven decisions with institution-grade intelligence.`}
+            {`Stop drowning in data. Get AI-powered insights from SEC filings, earnings transcripts, and analyst moves—delivered instantly. Make decisions with hedge fund-grade intelligence.`}
           </p>
 
           <div className="space-y-4 md:space-y-0 md:space-x-4">
             <Button className="w-5/6 md:w-1/4 font-bold group/arrow">
-              Get Started
+              Start Free Trial
               <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
             </Button>
 
@@ -47,7 +47,7 @@ export const HeroSection = () => {
               <Link
                 href="/features"
               >
-                Explore Features
+                See Features
                 <ArrowRight className="size-5 ml-2 transition-transform" />
               </Link>
             </Button>

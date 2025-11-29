@@ -3,12 +3,16 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import { LayoutDashboard, Users, Bot, Bell } from "lucide-react";
 
+
+import { HoldingsPreview } from "@/components/features/holdings-preview";
+
 interface CoreFeatureProps {
   icon: React.ReactNode;
   title: string;
   description: string;
   imageAlt: string;
   reverse?: boolean;
+  customVisual?: React.ReactNode;
 }
 
 const CoreFeature = ({
@@ -16,7 +20,8 @@ const CoreFeature = ({
   title,
   description,
   imageAlt,
-  reverse = false
+  reverse = false,
+  customVisual
 }: CoreFeatureProps) => {
   const { theme } = useTheme();
 
@@ -40,14 +45,20 @@ const CoreFeature = ({
 
       <div className={`relative ${reverse ? 'lg:order-1' : ''}`}>
         <div className="absolute inset-0 bg-primary/20 rounded-lg blur-3xl"></div>
-        <Image
-          width={700}
-          height={500}
-          className="relative w-full rounded-lg border border-secondary shadow-2xl"
-          src={theme === "light" ? "/hero-image-light.jpeg" : "/hero-image-dark.jpeg"}
-          alt={imageAlt}
-          priority={false}
-        />
+        {customVisual ? (
+          <div className="relative w-full h-[500px] rounded-lg border border-secondary shadow-2xl overflow-hidden flex flex-col">
+            {customVisual}
+          </div>
+        ) : (
+          <Image
+            width={700}
+            height={500}
+            className="relative w-full rounded-lg border border-secondary shadow-2xl"
+            src={theme === "light" ? "/hero-image-light.jpeg" : "/hero-image-dark.jpeg"}
+            alt={imageAlt}
+            priority={false}
+          />
+        )}
       </div>
     </div>
   );
@@ -73,16 +84,16 @@ export const CoreFeaturesSection = () => {
         {/* Feature 1: Cockpit Dashboard */}
         <CoreFeature
           icon={<LayoutDashboard className="h-10 w-10 text-primary" />}
-          title="Cockpit-like dashboard to quickly understand what analysts understand"
-          description="Professional-grade control panel with real-time market data, analyst consensus, and key metrics at a glance. Get the full picture instantly."
+          title="Understand what analysts know, instantly"
+          description="See the complete picture in seconds. Real-time data, analyst consensus, and key metrics—all in one professional-grade dashboard. No more digging through reports."
           imageAlt="StockDrifts Cockpit Dashboard"
         />
 
         {/* Feature 2: Smart Notifications */}
         <CoreFeature
           icon={<Bell className="h-10 w-10 text-primary" />}
-          title="Smart AI alerts under a second"
-          description="Get instant AI-powered notifications when your favorite company files an SEC filing or releases news on their website. Add your own custom prompts to get quick reactions to breaking news and market events."
+          title="Get AI alerts that matter"
+          description="Filter the noise. Get instant notifications for SEC filings, earnings reports, and breaking news—only when your AI custom prompts find something important."
           imageAlt="Smart AI Notifications"
           reverse
         />
@@ -90,16 +101,17 @@ export const CoreFeaturesSection = () => {
         {/* Feature 3: Investor Intelligence */}
         <CoreFeature
           icon={<Users className="h-10 w-10 text-primary" />}
-          title="See, copy, learn, get ideas from 20k investors"
-          description="View positions, understand investment thesis, and track performance of top investors in your favorite stocks. Learn from the best."
+          title="Copy strategies from 20,000+ investors"
+          description="See what top investors are buying, holding, and selling. Track their performance and steal their best ideas—legally."
           imageAlt="Investor Intelligence Platform"
+          customVisual={<HoldingsPreview />}
         />
 
         {/* Feature 4: AI Side Panel */}
         <CoreFeature
           icon={<Bot className="h-10 w-10 text-primary" />}
-          title="AI side panel with ±0 hallucinations"
-          description="We achieve near-zero hallucinations by optimizing the context fed to AI. Get reliable insights without the noise."
+          title="AI that thinks like you do"
+          description="Near-zero hallucinations. Our AI analyzes only verified data—so you get reliable insights every time. No guesswork."
           imageAlt="AI Side Panel with Zero Hallucinations"
           reverse
         />
