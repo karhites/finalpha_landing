@@ -30,7 +30,7 @@ export const HeroSection = () => {
           </div>
 
           <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-            {`Stop drowning in data. Get AI-powered insights from SEC filings, earnings transcripts, and analyst moves—delivered instantly. Make decisions with hedge fund-grade intelligence.`}
+            {`Build fundamental conviction instantly. Get AI-powered insights from SEC filings, earnings calls, and analyst ratings to make smarter decisions with Hedge fund-grade intelligence`}
           </p>
 
           <div className="space-y-4 md:space-y-0 md:space-x-4">

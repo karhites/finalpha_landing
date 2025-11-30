@@ -42,7 +42,7 @@ const features: Feature[] = [
   {
     icon: <Bell className="h-6 w-6" />,
     title: "Notifications",
-    description: "Never miss an important update."
+    description: "Under 1s AI analysis for news. Filter out the news that's tradeable."
   },
   {
     icon: <Target className="h-6 w-6" />,
@@ -61,8 +61,8 @@ const features: Feature[] = [
   },
   {
     icon: <Target className="h-6 w-6" />,
-    title: "Investment Thesis & Positions",
-    description: "Get the investment thesis and avg. price for each position in your favourite investors."
+    title: "Avg. prices and Investment thesis",
+    description: "Get the investment thesis and avg. price for each positions for your favourite investors."
   }
 ];
 
