@@ -77,23 +77,23 @@ export const CoreFeaturesSection = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground">
-            Four powerful capabilities that transform how you research and invest
+            Powerful capabilities that transform how you research and invest
           </p>
         </div>
 
         {/* Feature 1: Cockpit Dashboard */}
         <CoreFeature
           icon={<LayoutDashboard className="h-10 w-10 text-primary" />}
-          title="Understand what analysts know, instantly"
-          description="See the complete picture in seconds. Real-time data, analyst consensus, and key metrics—all in one professional-grade dashboard. No more digging through reports."
+          title="Expansive Dashboards. Efficient Research."
+          description="Consolidate critical metrics and professional data into one powerful view. Instantly see what analysts know and spot opportunities faster."
           imageAlt="StockDrifts Cockpit Dashboard"
         />
 
         {/* Feature 2: Smart Notifications */}
         <CoreFeature
           icon={<Bell className="h-10 w-10 text-primary" />}
-          title="Get AI alerts that matter"
-          description="Filter the noise. Get instant notifications for SEC filings, earnings reports, and breaking news—only when your AI custom prompts find something important."
+          title="Beat the Market with AI-Powered Alerts"
+          description="Receive <1s alerts on Telegram, Slack, Discord, or WhatsApp, enriched with your custom AI analysis. We run your prompts against filings and news instantly, giving you immediate context wherever you are.."
           imageAlt="Smart AI Notifications"
           reverse
         />
@@ -102,7 +102,7 @@ export const CoreFeaturesSection = () => {
         <CoreFeature
           icon={<Users className="h-10 w-10 text-primary" />}
           title="Copy strategies from 20,000+ investors"
-          description="See what top investors are buying, holding, and selling. Track their performance and steal their best ideas—legally."
+          description="See what top investors are buying, holding, and selling. Track their performance and steal their best ideas—legally. Follow the investors who consistently outperform the market"
           imageAlt="Investor Intelligence Platform"
           customVisual={<HoldingsPreview />}
         />
@@ -110,8 +110,8 @@ export const CoreFeaturesSection = () => {
         {/* Feature 4: AI Side Panel */}
         <CoreFeature
           icon={<Bot className="h-10 w-10 text-primary" />}
-          title="AI that thinks like you do"
-          description="Near-zero hallucinations. Our AI analyzes only verified data—so you get reliable insights every time. No guesswork."
+          title="~ZERO Hallucinations AI Bot"
+          description="Reliable insights from verified data, with focused context to prevent AI errors."
           imageAlt="AI Side Panel with Zero Hallucinations"
           reverse
         />
