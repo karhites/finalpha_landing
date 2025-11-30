@@ -9,26 +9,26 @@ import { SponsorsSection } from "@/components/layout/sections/sponsors";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 
 export const metadata = {
-  title: "Stop Drifts - AI-Powered Equity Research Platform",
+  title: "StockDrifts - AI-Powered Equity Research Platform",
   description: "Transform your investment workflow with AI-powered analysis of SEC filings, earnings transcripts, and analyst ratings. Institution-grade financial intelligence.",
   openGraph: {
     type: "website",
-    url: "https://stopdrifts.com",
-    title: "Stop Drifts - AI-Powered Equity Research Platform",
+    url: "https://stockdrifts.com",
+    title: "StockDrifts - AI-Powered Equity Research Platform",
     description: "Transform your investment workflow with AI-powered analysis of SEC filings, earnings transcripts, and analyst ratings. Institution-grade financial intelligence.",
     images: [
       {
         url: "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
         width: 1200,
         height: 630,
-        alt: "Stop Drifts - AI-Powered Equity Research Platform",
+        alt: "StockDrifts - AI-Powered Equity Research Platform",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "https://stopdrifts.com",
-    title: "Stop Drifts - AI-Powered Equity Research Platform",
+    site: "https://stockdrifts.com",
+    title: "StockDrifts - AI-Powered Equity Research Platform",
     description: "Transform your investment workflow with AI-powered analysis of SEC filings, earnings transcripts, and analyst ratings. Institution-grade financial intelligence.",
     images: [
       "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",

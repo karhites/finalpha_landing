@@ -11,7 +11,7 @@ export const FooterSection = () => {
             <Link href="#" className="flex font-bold items-center">
               <ChevronsDownIcon className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary" />
 
-              <h3 className="text-2xl">Stop Drifts</h3>
+              <h3 className="text-2xl">StockDrifts</h3>
             </Link>
           </div>
 
@@ -103,7 +103,7 @@ export const FooterSection = () => {
         <Separator className="my-6" />
         <section className="">
           <h3 className="">
-            &copy; 2025 Stop Drifts. All rights reserved.
+            &copy; 2025 StockDrifts. All rights reserved.
             <span className="text-muted-foreground text-sm ml-4">
               Providing institution-grade financial intelligence to all investors.
             </span>

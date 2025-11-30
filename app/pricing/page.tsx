@@ -4,26 +4,26 @@ import { FooterSection } from "@/components/layout/sections/footer";
 import { Check } from "lucide-react";
 
 export const metadata = {
-  title: "Pricing - Stop Drifts AI-Powered Equity Research",
+  title: "Pricing - StockDrifts AI-Powered Equity Research",
   description: "Choose the perfect plan for your equity research needs. From individual investors to institutional clients, find flexible pricing that scales with you.",
   openGraph: {
     type: "website",
-    url: "https://stopdrifts.com/pricing",
-    title: "Pricing - Stop Drifts AI-Powered Equity Research",
+    url: "https://stockdrifts.com/pricing",
+    title: "Pricing - StockDrifts AI-Powered Equity Research",
     description: "Choose the perfect plan for your equity research needs. From individual investors to institutional clients, find flexible pricing that scales with you.",
     images: [
       {
         url: "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
         width: 1200,
         height: 630,
-        alt: "Stop Drifts Pricing",
+        alt: "StockDrifts Pricing",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "https://stopdrifts.com/pricing",
-    title: "Pricing - Stop Drifts AI-Powered Equity Research",
+    site: "https://stockdrifts.com/pricing",
+    title: "Pricing - StockDrifts AI-Powered Equity Research",
     description: "Choose the perfect plan for your equity research needs. From individual investors to institutional clients, find flexible pricing that scales with you.",
     images: [
       "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",

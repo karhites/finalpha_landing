@@ -7,27 +7,27 @@ import { Bot, Search, Target, Bell } from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Features - Stop Drifts AI-Powered Equity Research",
-  description: "Explore Stop Drifts' powerful features: AI Side Panel, Transcript Search, Analyst Ratings, and Smart Notifications. Everything you need to research smarter.",
+  title: "Features - StockDrifts AI-Powered Equity Research",
+  description: "Explore StockDrifts' powerful features: AI Side Panel, Transcript Search, Analyst Ratings, and Smart Notifications. Everything you need to research smarter.",
   openGraph: {
     type: "website",
-    url: "https://stopdrifts.com/features",
-    title: "Features - Stop Drifts AI-Powered Equity Research",
-    description: "Explore Stop Drifts' powerful features: AI Side Panel, Transcript Search, Analyst Ratings, and Smart Notifications. Everything you need to research smarter.",
+    url: "https://stockdrifts.com/features",
+    title: "Features - StockDrifts AI-Powered Equity Research",
+    description: "Explore StockDrifts' powerful features: AI Side Panel, Transcript Search, Analyst Ratings, and Smart Notifications. Everything you need to research smarter.",
     images: [
       {
         url: "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
         width: 1200,
         height: 630,
-        alt: "Stop Drifts Features",
+        alt: "StockDrifts Features",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "https://stopdrifts.com/features",
-    title: "Features - Stop Drifts AI-Powered Equity Research",
-    description: "Explore Stop Drifts' powerful features: AI Side Panel, Transcript Search, Analyst Ratings, and Smart Notifications. Everything you need to research smarter.",
+    site: "https://stockdrifts.com/features",
+    title: "Features - StockDrifts AI-Powered Equity Research",
+    description: "Explore StockDrifts' powerful features: AI Side Panel, Transcript Search, Analyst Ratings, and Smart Notifications. Everything you need to research smarter.",
     images: [
       "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
     ],
